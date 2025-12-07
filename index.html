@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Walsong | Premium Digital Brand</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Walsong — Software & Trade Systems</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" />
 </head>
 <body>
+  <nav class="nav">
+    <img src="logo.png" alt="Walsong logo" class="nav-logo" />
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#product">Product</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
   <header class="hero">
-    <h1>WALSONG</h1>
-    <p>Digital • Gaming • Technology • Content</p>
-    <a href="#about" class="btn">Explore</a>
+    <div class="hero-inner">
+      <h1>WALSONG</h1>
+      <p class="tag">Business Software • Store & Trading Systems • Desktop & Web</p>
+      <div class="cta">
+        <a class="btn" href="#product">Walsong TradeMaster</a>
+        <a class="btn ghost" href="https://sangambaral17.github.io/TradeMaster/" target="_blank">Live Demo</a>
+      </div>
+    </div>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Walsong</h2>
-    <p>
-      Walsong is a premium digital identity focused on gaming, development,
-      content creation, and modern technology solutions.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <h2>About Walsong</h2>
+      <p>Walsong is a software company building reliable business systems for department stores, local shops and distributors. Our flagship product, <strong>Walsong TradeMaster</strong>, is a desktop-grade store & trading management solution built with .NET.</p>
+    </section>
 
-  <section class="section dark">
-    <h2>What We Do</h2>
-    <div class="cards">
-      <div class="card">🎮 Gaming Content</div>
-      <div class="card">💻 Software Development</div>
-      <div class="card">🎥 Digital Branding</div>
-    </div>
-  </section>
+    <section id="services" class="section dark">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">Custom Business Software</div>
+        <div class="card">Store & Trading Systems</div>
+        <div class="card">Desktop Apps (.NET/WPF)</div>
+        <div class="card">Web Systems (Coming soon)</div>
+        <div class="card">Automation & Integrations</div>
+        <div class="card">Consulting & Architecture</div>
+      </div>
+    </section>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Email: contact@walsong.tech (future)</p>
-    <p>GitHub: github.com/sangambaral17</p>
-  </section>
+    <section id="product" class="section">
+      <h2>Flagship Product — Walsong TradeMaster</h2>
+      <p class="lead">Enterprise-style trading & store management system for retailers and wholesalers. Desktop-first, web version in development.</p>
 
-  <footer>
-    © 2025 Walsong. All rights reserved.
+      <ul class="features">
+        <li>Role-based access & secure authentication</li>
+        <li>Inventory, sales, purchases, reporting</li>
+        <li>Built with .NET, WPF & Entity Framework</li>
+        <li>Scalable for multiple stores & branches</li>
+      </ul>
+
+      <div class="product-actions">
+        <a class="btn" href="https://github.com/sangambaral17/TradeMaster" target="_blank">View Source</a>
+        <a class="btn ghost" href="#contact">Request Demo</a>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section dark">
+      <h2>Portfolio / Screenshots</h2>
+      <p>Upload TradeMaster screenshots here (we’ll add gallery after you upload images).</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact & Business Enquiry</h2>
+      <p>Interested in a demo or a custom solution? Contact us.</p>
+
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:contact@walsong.tech">contact@walsong.tech</a> (coming soon)</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/sangambaral17" target="_blank">github.com/sangambaral17</a></p>
+        <p><strong>Demo:</strong> <a href="https://sangambaral17.github.io/TradeMaster/" target="_blank">Live TradeMaster Demo</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Walsong Software Services. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
